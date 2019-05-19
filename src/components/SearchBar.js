@@ -8,6 +8,8 @@ class SearchBar extends React.Component {
   //     console.log(event.target.value)
   // }
 
+  // to pass a prop from a child to a parent you need to create a callback from parent to child 
+
   onFormSubmit=(event)=>{
     event.preventDefault();
     this.props.onSubmit(this.state.term);
